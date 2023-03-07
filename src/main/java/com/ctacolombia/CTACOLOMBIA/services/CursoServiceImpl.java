@@ -22,4 +22,11 @@ public class CursoServiceImpl implements CursoService{
         if(cursoPage.isEmpty()) return GeneralResponse.buildResponseGeneral(HttpStatus.BAD_REQUEST, Constants.NO_DATA_MESSAGE, false, null);
         return GeneralResponse.buildResponseGeneral(HttpStatus.OK, Constants.SUCCES_MESSAGE, true, cursoPage);
     }
+
+    @Override
+    public GeneralResponse createCurso(Curso curso) {
+        if(!curso.equals(null)) return GeneralResponse.buildResponseGeneral(HttpStatus.BAD_REQUEST, Constants.CURSO_INCOMPLETO, false, null);
+        Curso cursoSaved = cursoRepository.save(curso);
+        return GeneralResponse.buildResponseGeneral(HttpStatus.OK, Constants.SUCCES_SAVED, true, cursoSaved);
+    }
 }

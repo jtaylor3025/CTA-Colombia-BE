@@ -9,5 +9,6 @@ public class Constants implements Serializable {
     public static final String ARL_EXISTS = "YA EXISTE ESTA ARL";
     public static final String SUCCES_MESSAGE = "DATA OBTENIDA";
     public static final String NO_DATA_MESSAGE = "NO HAY DATOS";
+    public static final String CURSO_INCOMPLETO = "DATOS INCOMPLETOS PARA CREAR EL CURSO";
     public static final String SUCCES_SAVED = "DATOS GUARDADOS";
 }
