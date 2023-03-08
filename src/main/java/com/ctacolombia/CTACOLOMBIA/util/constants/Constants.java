@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Constants implements Serializable {
     private Constants(){super();}
+    public static final String OBJECT_NULL = "OBJETO VACIO";
     public static final String EMPRESA_NO_DATA = "NO HAY EMPRESAS REGISTRADAS";
     public static final String EMPRESA_EXISTS = "YA EXISTE ESTA EMPRESA";
     public static final String ARL_EXISTS = "YA EXISTE ESTA ARL";
